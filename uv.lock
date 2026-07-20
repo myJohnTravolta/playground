@@ -34,15 +34,19 @@ name = "playground"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "pytest" },
     { name = "python-dotenv" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "pytest", specifier = ">=9.1.1" },
-    { name = "python-dotenv", specifier = ">=1.2.2" },
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
 ]
+
+[package.metadata]
+requires-dist = [{ name = "python-dotenv", specifier = ">=1.2.2" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = ">=9.1.1" }]
 
 [[package]]
 name = "pluggy"
