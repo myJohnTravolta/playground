@@ -2,7 +2,7 @@
 
 import requests
 
-from .client import post_chat
+from client import post_chat
 
 
 def run():

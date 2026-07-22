@@ -1,7 +1,7 @@
 import shlex
 import requests
 
-from .client import post_chat
+from client import post_chat
 
 TIMES_RANGE = (1, 20)
 TEMPERATURE_RANGE = (0.0, 2.0)

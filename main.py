@@ -1,3 +1,3 @@
-from steps import step_03_temperature
+from steps import step_04_streaming
 
-step_03_temperature.run()
+step_04_streaming.run()
